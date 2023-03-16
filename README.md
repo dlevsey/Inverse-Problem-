@@ -1,6 +1,9 @@
 # Binary Parameter Fitting
 
 This is a Python code for fitting the parameters of a binary star system by using the Emcee MCMC algorithm. The code takes some known parameters of the system and uses them to generate a light curve of the system. Then it adds some noise to the data and uses Emcee to fit the parameters of the system based on the generated data.
+## Status
+
+**Note**: This code is currently a work-in-progress and may not be fully functional. The documentation will be updated as the project progresses.
 
 ### Usage
 * Install the necessary packages: phoebe, emcee, matplotlib, scipy, schwimmbad, corner.
