@@ -18,3 +18,15 @@ This is a Python code for fitting the parameters of a binary star system by usin
 ### Example
 
 An example usage of the code with the given parameters is shown in the script. The code generates a light curve of a binary system, adds some noise to the data, and then uses Emcee to fit the parameters of the system. The MCMC results are plotted in various figures to visualize the fitted parameters and their uncertainties.
+
+
+### Issues Encountered During Research and Their Solutions
+
+During the initial stages of our research, we encountered difficulties in fitting the parameters correctly using the emcee model. We explored various strategies to address these issues, including:
+
+   * Varying the number of walkers
+   * Adjusting the initial distribution for the walkers
+   * Modifying the uncertainties allowed for each data point
+   * Varying the number of triangles used in the discretization of the stellar surfaces
+
+Despite these efforts, the model was unable to generate a satisfactory posterior distribution. This issue can be observed in the Jupyter notebook **"10000-iterations.ipynb,"** where a pickle file is used to load one of the unsatisfactory runs for further examination.
